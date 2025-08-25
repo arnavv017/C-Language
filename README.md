@@ -4,17 +4,16 @@ int main() {
     int num1, num2;
     int sum, difference, product, remainder;
     float quotient;
-
-    // Input two integers
+ // Input two integers
     printf("Enter two integers: ");
     scanf("%d %d", &num1, &num2);
 
-    // Perform arithmetic operations
+ // Perform arithmetic operations
     sum = num1 + num2;
     difference = num1 - num2;
     product = num1 * num2;
 
-    // Check for division by zero
+ // Check for division by zero
     if (num2 != 0) {
         quotient = (float)num1 / num2;  // typecast to float for decimal result
         remainder = num1 % num2;
@@ -23,7 +22,7 @@ int main() {
         return 1;
     }
 
-    // Display results
+ // Display results
     printf("\nResults:\n");
     printf("Sum = %d\n", sum);
     printf("Difference = %d\n", difference);
@@ -31,5 +30,5 @@ int main() {
     printf("Quotient = %.2f\n", quotient);
     printf("Remainder = %d\n", remainder);
 
-    return 0;
+ return 0;
 }
